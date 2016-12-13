@@ -27,7 +27,7 @@ function range(start, end) {
 
 function disabledDate(current) {
   // can not select days before today and today
-  return current && current.valueOf() < Date.now();
+  return current && current.valueOf() <= Date.now() && current.valueOf() >= '2017-08-31';
 }
 
 function disabledDateTime() {
